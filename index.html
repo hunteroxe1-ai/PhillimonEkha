@@ -4,1157 +4,538 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- SEO Primary Meta Tags -->
-  <title>Phillimon Ekha Official Website | Software, Security & Graphic Design Hub</title>
-  <meta name="title" content="Phillimon Ekha Official Website | Software, Security & Graphic Design Hub">
-  <meta name="description" content="Official website of Phillimon Ekha - Software Developer, Ethical Hacking Specialist, Graphic Designer, Digital Creator, and Founder of Phill AI.">
-  <meta name="keywords" content="Phill AI, Phillimon Ekha, Software Development, App Development, Web Development, Ethical Hacking, Cybersecurity, Graphic Design, Photo Editing, AI Assistant, Phill AI Download">
-  <meta name="author" content="Phillimon Ekha">
-  <meta name="robots" content="index, follow">
-  <meta name="theme-color" content="#0b0f19">
-  <link rel="canonical" href="https://phillimonekha.com/">
+  <title>Phillimon Ekha | Official Website</title>
 
-  <!-- Open Graph / Facebook Meta Tags -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://phillimonekha.com/">
-  <meta property="og:title" content="Phillimon Ekha Official Website | Software, Security & Graphic Design Hub">
-  <meta property="og:description" content="Download Phill AI and explore expert software engineering, graphic design, photo editing, and cybersecurity solutions by Phillimon Ekha.">
-  <meta property="og:image" content="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1200&q=80">
+  <meta name="description"
+    content="Phillimon Ekha — Software Developer, AI Creator, Ethical Hacker, Graphic Designer, Photo Editor and Digital Creator.">
 
-  <!-- Twitter Card Meta Tags -->
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://phillimonekha.com/">
-  <meta property="twitter:title" content="Phillimon Ekha Official Website | Software, Security & Graphic Design Hub">
-  <meta property="twitter:description" content="Download Phill AI and explore expert software engineering, graphic design, photo editing, and cybersecurity solutions by Phillimon Ekha.">
-  <meta property="twitter:image" content="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1200&q=80">
-
-  <!-- Structured Data / JSON-LD -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Phill AI",
-    "operatingSystem": "ANDROID",
-    "applicationCategory": "UtilitiesApplication",
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.9",
-      "ratingCount": "1250"
-    },
-    "offers": {
-      "@type": "Offer",
-      "price": "0",
-      "priceCurrency": "USD"
-    },
-    "author": {
-      "@type": "Person",
-      "name": "Phillimon Ekha"
-    }
-  }
-  </script>
-
-  <!-- Google Fonts & Font Awesome Icons -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-  <style>
-    /* ==========================================================================
-       OPTIMIZED CSS VARIABLES & THEMING
-       ========================================================================== */
-    :root {
-      --bg-dark: #07090e;
-      --bg-card: rgba(15, 23, 42, 0.7);
-      --bg-card-border: rgba(255, 255, 255, 0.08);
-      --primary-purple: #7c3aed;
-      --primary-cyan: #06b6d4;
-      --accent-neon: #00f2fe;
-      --text-main: #f8fafc;
-      --text-muted: #94a3b8;
-      --glass-nav: rgba(7, 9, 14, 0.9);
-      --transition: all 0.2s ease-out;
-    }
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
 
-    [data-theme="light"] {
-      --bg-dark: #f0f4f8;
-      --bg-card: rgba(255, 255, 255, 0.9);
-      --bg-card-border: rgba(0, 0, 0, 0.08);
-      --text-main: #0f172a;
-      --text-muted: #475569;
-      --glass-nav: rgba(240, 244, 248, 0.95);
-    }
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
-    /* ==========================================================================
-       GLOBAL RESET & PERFORMANCE OPTIMIZATIONS
-       ========================================================================== */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Plus Jakarta Sans', sans-serif;
-      scroll-behavior: smooth;
-    }
-
-    body {
-      background-color: var(--bg-dark);
-      color: var(--text-main);
-      overflow-x: hidden;
-      transition: background-color 0.3s ease, color 0.3s ease;
-      position: relative;
-    }
-
-    /* Optimized Static Glow Effects */
-    .bg-gradient-glow {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100vw;
-      height: 100vh;
-      z-index: -2;
-      background: radial-gradient(circle at 20% 20%, rgba(124, 58, 237, 0.12) 0%, transparent 40%),
-                  radial-gradient(circle at 80% 80%, rgba(6, 182, 212, 0.12) 0%, transparent 40%);
-      pointer-events: none;
-    }
-
-    /* ==========================================================================
-       LOADING SCREEN
-       ========================================================================== */
-    #loader {
-      position: fixed;
-      inset: 0;
-      background: #07090e;
-      z-index: 9999;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      transition: opacity 0.3s ease, visibility 0.3s ease;
-    }
-
-    .loader-ring {
-      width: 50px;
-      height: 50px;
-      border: 3px solid rgba(255, 255, 255, 0.1);
-      border-radius: 50%;
-      border-top-color: var(--accent-neon);
-      animation: spin 0.8s linear infinite;
-    }
-
-    .loader-text {
-      margin-top: 16px;
-      font-size: 0.85rem;
-      letter-spacing: 2px;
-      color: var(--accent-neon);
-      text-transform: uppercase;
-      font-weight: 600;
-    }
-
-    @keyframes spin {
-      to { transform: rotate(360deg); }
-    }
-
-    /* ==========================================================================
-       NAVIGATION BAR
-       ========================================================================== */
-    header {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      z-index: 1000;
-      background: var(--glass-nav);
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
-      border-bottom: 1px solid var(--bg-card-border);
-    }
-
-    .nav-container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 16px 24px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .logo {
-      font-size: 1.25rem;
-      font-weight: 800;
-      color: var(--text-main);
-      text-decoration: none;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      letter-spacing: -0.5px;
-    }
-
-    .logo span {
-      background: linear-gradient(135deg, var(--primary-cyan), var(--primary-purple));
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-
-    .nav-links {
-      display: flex;
-      gap: 22px;
-      list-style: none;
-      align-items: center;
-    }
-
-    .nav-links a {
-      color: var(--text-muted);
-      text-decoration: none;
-      font-size: 0.9rem;
-      font-weight: 500;
-      transition: var(--transition);
-      position: relative;
-    }
-
-    .nav-links a:hover, .nav-links a.active {
-      color: var(--accent-neon);
-    }
-
-    .nav-actions {
-      display: flex;
-      align-items: center;
-      gap: 14px;
-    }
-
-    .theme-toggle {
-      background: var(--bg-card);
-      border: 1px solid var(--bg-card-border);
-      color: var(--text-main);
-      width: 38px;
-      height: 38px;
-      border-radius: 50%;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      transition: var(--transition);
-    }
-
-    .theme-toggle:hover {
-      border-color: var(--accent-neon);
-    }
-
-    .mobile-toggle {
-      display: none;
-      font-size: 1.3rem;
-      background: none;
-      border: none;
-      color: var(--text-main);
-      cursor: pointer;
-    }
-
-    /* ==========================================================================
-       LAYOUT & CARDS
-       ========================================================================== */
-    section {
-      padding: 90px 24px 60px;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-
-    .section-header {
-      text-align: center;
-      margin-bottom: 50px;
-    }
-
-    .section-subtitle {
-      text-transform: uppercase;
-      font-size: 0.8rem;
-      font-weight: 700;
-      letter-spacing: 2px;
-      color: var(--primary-cyan);
-      margin-bottom: 8px;
-      display: block;
-    }
-
-    .section-title {
-      font-size: 2.3rem;
-      font-weight: 800;
-      letter-spacing: -1px;
-    }
-
-    .glass-card {
-      background: var(--bg-card);
-      backdrop-filter: blur(8px);
-      -webkit-backdrop-filter: blur(8px);
-      border: 1px solid var(--bg-card-border);
-      border-radius: 20px;
-      padding: 28px;
-      transition: var(--transition);
-    }
-
-    .glass-card:hover {
-      border-color: rgba(6, 182, 212, 0.4);
-    }
-
-    /* Buttons */
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-      padding: 14px 32px;
-      border-radius: 50px;
-      font-weight: 700;
-      font-size: 0.95rem;
-      text-decoration: none;
-      transition: var(--transition);
-      cursor: pointer;
-      border: none;
-    }
-
-    .btn-primary {
-      background: linear-gradient(135deg, var(--primary-purple), var(--primary-cyan));
-      color: #fff;
-      box-shadow: 0 8px 20px -5px rgba(124, 58, 237, 0.4);
-    }
-
-    .btn-primary:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 12px 25px -5px rgba(6, 182, 212, 0.5);
-    }
-
-    .btn-secondary {
-      background: var(--bg-card);
-      color: var(--text-main);
-      border: 1px solid var(--bg-card-border);
-    }
-
-    .btn-secondary:hover {
-      background: rgba(255, 255, 255, 0.1);
-      border-color: var(--text-main);
-    }
-
-    /* ==========================================================================
-       HERO SECTION
-       ========================================================================== */
-    .hero {
-      padding-top: 150px;
-      padding-bottom: 60px;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 40px;
-      align-items: center;
-    }
-
-    .hero-content h1 {
-      font-size: 3rem;
-      line-height: 1.1;
-      font-weight: 800;
-      letter-spacing: -1.5px;
-      margin-bottom: 12px;
-    }
-
-    .hero-subtitle {
-      font-size: 1.35rem;
-      font-weight: 600;
-      color: var(--primary-cyan);
-      margin-bottom: 20px;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-
-    .hero-description {
-      font-size: 1.05rem;
-      color: var(--text-muted);
-      line-height: 1.6;
-      margin-bottom: 30px;
-    }
-
-    .typing-text {
-      border-right: 2px solid var(--accent-neon);
-      white-space: nowrap;
-      animation: blink 0.75s step-end infinite;
-    }
-
-    @keyframes blink {
-      from, to { border-color: transparent }
-      50% { border-color: var(--accent-neon); }
-    }
-
-    .hero-cta {
-      display: flex;
-      gap: 14px;
-      flex-wrap: wrap;
-    }
-
-    .hero-image-wrapper {
-      display: flex;
-      justify-content: center;
-    }
-
-    .hero-image-card {
-      width: 100%;
-      max-width: 420px;
-      border-radius: 24px;
-      padding: 10px;
-      background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.02));
-      border: 1px solid var(--bg-card-border);
-    }
-
-    .hero-image-card img {
-      width: 100%;
-      height: 420px;
-      border-radius: 16px;
-      display: block;
-      object-fit: cover;
-    }
-
-    /* ==========================================================================
-       SERVICES SECTION
-       ========================================================================== */
-    .services-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-      gap: 24px;
-    }
-
-    .service-card {
-      padding: 28px;
-      display: flex;
-      flex-direction: column;
-      gap: 14px;
-    }
-
-    .service-icon {
-      width: 52px;
-      height: 52px;
-      border-radius: 14px;
-      background: linear-gradient(135deg, rgba(124, 58, 237, 0.2), rgba(6, 182, 212, 0.2));
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.4rem;
-      color: var(--accent-neon);
-      border: 1px solid var(--bg-card-border);
-    }
-
-    .service-card h3 {
-      font-size: 1.25rem;
-      font-weight: 700;
-    }
-
-    .service-card p {
-      color: var(--text-muted);
-      font-size: 0.95rem;
-      line-height: 1.6;
-    }
-
-    /* ==========================================================================
-       ABOUT & FEATURES
-       ========================================================================== */
-    .about-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 36px;
-      align-items: center;
-    }
-
-    .features-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 20px;
-    }
-
-    .feature-card {
-      padding: 26px;
-    }
-
-    .feature-icon {
-      width: 46px;
-      height: 46px;
-      border-radius: 12px;
-      background: linear-gradient(135deg, rgba(124, 58, 237, 0.2), rgba(6, 182, 212, 0.2));
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.2rem;
-      color: var(--accent-neon);
-      margin-bottom: 16px;
-      border: 1px solid var(--bg-card-border);
-    }
-
-    .feature-card h3 {
-      font-size: 1.15rem;
-      margin-bottom: 8px;
-    }
-
-    .feature-card p {
-      color: var(--text-muted);
-      font-size: 0.9rem;
-      line-height: 1.5;
-    }
-
-    /* ==========================================================================
-       UPDATES & DOWNLOAD
-       ========================================================================== */
-    .updates-timeline {
-      max-width: 800px;
-      margin: 0 auto;
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-    }
-
-    .update-item {
-      display: flex;
-      gap: 16px;
-      align-items: flex-start;
-    }
-
-    .update-tag {
-      background: var(--primary-purple);
-      color: #fff;
-      padding: 4px 12px;
-      border-radius: 20px;
-      font-size: 0.78rem;
-      font-weight: 700;
-      white-space: nowrap;
-    }
-
-    .download-box {
-      text-align: center;
-      padding: 50px 24px;
-      background: linear-gradient(135deg, rgba(124, 58, 237, 0.15), rgba(6, 182, 212, 0.15));
-      border: 1px solid rgba(0, 242, 254, 0.25);
-    }
-
-    /* ==========================================================================
-       FAQ & CONTACT
-       ========================================================================== */
-    .faq-container {
-      max-width: 800px;
-      margin: 0 auto;
-      display: flex;
-      flex-direction: column;
-      gap: 14px;
-    }
-
-    .faq-item {
-      cursor: pointer;
-    }
-
-    .faq-question {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      font-weight: 600;
-      font-size: 1.05rem;
-    }
-
-    .faq-answer {
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height 0.25s ease, margin-top 0.25s ease;
-      color: var(--text-muted);
-      line-height: 1.5;
-    }
-
-    .faq-item.active .faq-answer {
-      max-height: 200px;
-      margin-top: 14px;
-    }
-
-    .faq-item.active .faq-toggle {
-      transform: rotate(180deg);
-    }
-
-    .social-links {
-      display: flex;
-      justify-content: center;
-      gap: 16px;
-      margin-top: 24px;
-      flex-wrap: wrap;
-    }
-
-    .btn-whatsapp {
-      background: #25D366;
-      color: #fff;
-    }
-
-    .btn-facebook {
-      background: #1877F2;
-      color: #fff;
-    }
-
-    /* ==========================================================================
-       FOOTER
-       ========================================================================== */
-    footer {
-      border-top: 1px solid var(--bg-card-border);
-      padding: 50px 24px 24px;
-      background: var(--glass-nav);
-      text-align: center;
-    }
-
-    .footer-content {
-      max-width: 1200px;
-      margin: 0 auto;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 16px;
-    }
-
-    .back-to-top {
-      position: fixed;
-      bottom: 24px;
-      right: 24px;
-      width: 44px;
-      height: 44px;
-      border-radius: 50%;
-      background: var(--primary-purple);
-      color: #fff;
-      border: none;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      opacity: 0;
-      visibility: hidden;
-      transition: var(--transition);
-      z-index: 900;
-      box-shadow: 0 8px 16px rgba(0,0,0,0.3);
-    }
-
-    .back-to-top.show {
-      opacity: 1;
-      visibility: visible;
-    }
-
-    /* ==========================================================================
-       RESPONSIVE DESIGN
-       ========================================================================== */
-    @media (max-width: 992px) {
-      .hero {
-        grid-template-columns: 1fr;
-        text-align: center;
-        padding-top: 120px;
-      }
-      .hero-subtitle, .hero-cta {
-        justify-content: center;
-      }
-      .about-grid {
-        grid-template-columns: 1fr;
-      }
-    }
-
-    @media (max-width: 768px) {
-      .nav-links {
-        position: fixed;
-        top: 65px;
-        left: -100%;
-        width: 100%;
-        height: calc(100vh - 65px);
-        background: var(--bg-dark);
-        flex-direction: column;
-        justify-content: center;
-        transition: var(--transition);
-      }
-      .nav-links.active {
-        left: 0;
-      }
-      .mobile-toggle {
-        display: block;
-      }
-      .hero-content h1 {
-        font-size: 2.2rem;
-      }
-      .section-title {
-        font-size: 1.8rem;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <!-- Static Glow Overlay -->
-  <div class="bg-gradient-glow"></div>
-
-  <!-- Fast Loading Screen -->
+  <!-- LOADER -->
   <div id="loader">
-    <div class="loader-ring"></div>
-    <div class="loader-text">Phillimon Ekha</div>
+    <div class="loader-logo">PE</div>
   </div>
 
-  <!-- Sticky Navigation Header -->
-  <header id="header">
-    <div class="nav-container">
+
+  <!-- BACKGROUND -->
+  <div class="background">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+
+  <!-- NAVIGATION -->
+  <header>
+    <nav>
+
       <a href="#home" class="logo">
-        <i class="fa-solid fa-code"></i>
-        <span>Phillimon Ekha</span>
+        Phillimon <b>Ekha</b>
       </a>
-      <ul class="nav-links" id="navLinks">
-        <li><a href="#home" class="active">Home</a></li>
-        <li><a href="#about">About AI</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#features">Features</a></li>
-        <li><a href="#why">Why Us</a></li>
-        <li><a href="#updates">Updates</a></li>
-        <li><a href="#download">Download</a></li>
-        <li><a href="#faq">FAQ</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="#ai">Phill AI</a>
+        <a href="#contact">Contact</a>
+      </div>
+
       <div class="nav-actions">
-        <button class="theme-toggle" id="themeToggle" aria-label="Toggle Theme">
+
+        <button id="themeBtn">
           <i class="fa-solid fa-moon"></i>
         </button>
-        <button class="mobile-toggle" id="mobileToggle" aria-label="Open Menu">
+
+        <button id="menuBtn">
           <i class="fa-solid fa-bars"></i>
         </button>
+
       </div>
-    </div>
+
+    </nav>
   </header>
 
-  <!-- Hero Section -->
+
+  <!-- HERO -->
   <section id="home" class="hero">
-    <div class="hero-content">
-      <h1>Phillimon Ekha Official Website</h1>
-      <div class="hero-subtitle">
-        <span>I am a</span>
-        <span id="typing" class="typing-text">Phill AI Creator</span>
-      </div>
-      <p class="hero-description">
-        Welcome to the official hub of Phillimon Ekha. Explore high-speed software development, mobile application creation, web engineering, ethical hacking & cybersecurity, professional graphic design, and advanced photo editing.
+
+    <div class="hero-content reveal">
+
+      <small>WELCOME TO MY OFFICIAL WEBSITE</small>
+
+      <h1>
+        Phillimon<br>
+        <span>Ekha.</span>
+      </h1>
+
+      <!-- TYPING EFFECT -->
+      <h2>
+        I'm a <span id="typing"></span><i>|</i>
+      </h2>
+
+      <p>
+        Software developer, AI creator, ethical hacker,
+        graphic designer, photo editor and digital creator
+        building modern digital solutions.
       </p>
-      <div class="hero-cta">
-        <!-- MediaFire Link Yaphatikizidwa Pano -->
-        <a href="https://www.mediafire.com/file/ieo8gduewl3yb1x/Phill-AI.apk/file" target="_blank" rel="noopener" class="btn btn-primary">
-          <i class="fa-solid fa-download"></i> Download Phill AI
+
+      <div class="buttons">
+
+        <!-- SAME MEDIAFIRE LINK -->
+        <a
+          href="https://www.mediafire.com/file/ieo8gduewl3yb1x/Phill-AI.apk/file"
+          target="_blank"
+          class="btn primary">
+
+          <i class="fa-solid fa-download"></i>
+          Download Phill AI
+
         </a>
-        <a href="#services" class="btn btn-secondary">
-          Explore All Services
+
+        <a href="#projects" class="btn">
+          <i class="fa-solid fa-folder-open"></i>
+          My Work
         </a>
+
       </div>
+
     </div>
-    <div class="hero-image-wrapper">
-      <div class="hero-image-card">
-        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80" alt="Software Engineering & Creative Media by Phillimon Ekha">
+
+
+    <div class="hero-photo reveal">
+
+      <img
+        src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=900&q=85"
+        alt="Digital workspace">
+
+      <div class="photo-info">
+        <strong>PHILLIMON EKHA</strong>
+        <span>Software • AI • Security • Design</span>
       </div>
+
     </div>
+
   </section>
 
-  <!-- About Section (Phill AI) -->
+
+  <!-- ABOUT -->
   <section id="about">
-    <div class="section-header">
-      <span class="section-subtitle">Next Generation AI</span>
-      <h2 class="section-title">About Phill AI</h2>
+
+    <div class="section-title reveal">
+      <small>ABOUT ME</small>
+      <h2>Technology meets creativity.</h2>
     </div>
+
     <div class="about-grid">
-      <div class="glass-card">
-        <h3 style="font-size: 1.6rem; margin-bottom: 14px;">Smart Intelligence Built For Productivity</h3>
-        <p style="color: var(--text-muted); line-height: 1.6; margin-bottom: 16px;">
-          Phill AI is an advanced artificial intelligence assistant designed and engineered by Phillimon Ekha. Built with precision, fast execution, and modern AI algorithms, Phill AI delivers quick answers, writing assistance, coding support, and smart productivity tools.
+
+      <img
+        src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=85"
+        alt="Technology">
+
+      <div class="about-text reveal">
+
+        <p>
+          My name is <strong>Phillimon Ekha</strong>.
+          I am a digital creator interested in software
+          development, artificial intelligence,
+          cybersecurity awareness, graphic design and
+          creative digital work.
         </p>
-        <p style="color: var(--text-muted); line-height: 1.6;">
-          It seamlessly integrates high-speed performance with clean mobile user interfaces to ensure an effortless user experience on any device.
+
+        <p>
+          I build websites, applications, AI projects,
+          graphics and other digital solutions while
+          continuously learning new technologies.
         </p>
+
+        <div class="facts">
+
+          <div>
+            <strong>Software</strong>
+            <span>Web & Apps</span>
+          </div>
+
+          <div>
+            <strong>AI</strong>
+            <span>AI Projects</span>
+          </div>
+
+          <div>
+            <strong>Security</strong>
+            <span>Cyber Awareness</span>
+          </div>
+
+          <div>
+            <strong>Design</strong>
+            <span>Graphics & Photos</span>
+          </div>
+
+        </div>
+
       </div>
-      <div class="glass-card" style="text-align: center;">
-        <i class="fa-solid fa-brain" style="font-size: 4.5rem; color: var(--accent-neon); margin-bottom: 16px;"></i>
-        <h3>Lightning Fast & Secure</h3>
-        <p style="color: var(--text-muted); margin-top: 8px;">Optimized software architecture ensuring zero lag, quick query processing, and privacy protection.</p>
-      </div>
+
     </div>
+
   </section>
 
-  <!-- Services Section -->
-  <section id="services">
-    <div class="section-header">
-      <span class="section-subtitle">Expertise & Services</span>
-      <h2 class="section-title">What Phillimon Ekha Offers</h2>
+
+  <!-- SKILLS -->
+  <section id="skills">
+
+    <div class="section-title reveal">
+      <small>MY SKILLS</small>
+      <h2>What I work with.</h2>
     </div>
-    <div class="services-grid">
 
-      <!-- Web Development -->
-      <div class="glass-card service-card">
-        <div class="service-icon"><i class="fa-solid fa-globe"></i></div>
-        <h3>Web Application Development</h3>
-        <p>Creating high-performance, fully responsive, modern web interfaces, single-page applications, and interactive Web Apps tailored for ultra-fast loading speed and SEO optimization.</p>
-      </div>
+    <div class="cards">
 
-      <!-- Mobile App Development -->
-      <div class="glass-card service-card">
-        <div class="service-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
-        <h3>Mobile App Development</h3>
-        <p>Designing standalone Android applications and cross-platform mobile tools, focusing on clean user interface design, fast logic execution, and lightweight installation sizes.</p>
-      </div>
-
-      <!-- Ethical Hacking & Cybersecurity -->
-      <div class="glass-card service-card">
-        <div class="service-icon"><i class="fa-solid fa-shield-halved"></i></div>
-        <h3>Ethical Hacking & Security</h3>
-        <p>Analyzing system security, identifying software vulnerabilities, studying network protocols, data encryption, and implementing proactive cybersecurity defenses.</p>
-      </div>
-
-      <!-- Graphic Design & Branding -->
-      <div class="glass-card service-card">
-        <div class="service-icon"><i class="fa-solid fa-palette"></i></div>
-        <h3>Graphic Design & Branding</h3>
-        <p>Designing high-resolution logos, eye-catching promotional posters, social media banners, brand identity packages, and sleek user interface layouts with professional precision.</p>
-      </div>
-
-      <!-- Creative Photo Editing -->
-      <div class="glass-card service-card">
-        <div class="service-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
-        <h3>Creative Photo Editing & Manipulation</h3>
-        <p>Delivering high-end photo retouching, background removal/replacement, color grading, image restoration, and advanced visual manipulation tailored for personal or corporate branding.</p>
-      </div>
-
-      <!-- Custom Scripts & Software Logic -->
-      <div class="glass-card service-card">
-        <div class="service-icon"><i class="fa-solid fa-terminal"></i></div>
-        <h3>Custom Scripting & Automation</h3>
-        <p>Developing specialized backend logic, terminal automation, custom scripts, and standalone utility tools designed for high efficiency and smooth workflow.</p>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- Features Section -->
-  <section id="features">
-    <div class="section-header">
-      <span class="section-subtitle">Core Capabilities</span>
-      <h2 class="section-title">Key Features</h2>
-    </div>
-    <div class="features-grid">
-      <div class="glass-card feature-card">
-        <div class="feature-icon"><i class="fa-solid fa-bolt"></i></div>
-        <h3>Ultra Fast</h3>
-        <p>Lightweight code execution built for instant loading times and zero smooth-scroll lag.</p>
-      </div>
-      <div class="glass-card feature-card">
-        <div class="feature-icon"><i class="fa-solid fa-robot"></i></div>
-        <h3>Smart AI</h3>
-        <p>Advanced conversational AI designed for intelligent answers and problem-solving.</p>
-      </div>
-      <div class="glass-card feature-card">
-        <div class="feature-icon"><i class="fa-solid fa-paintbrush"></i></div>
-        <h3>Creative Visuals</h3>
-        <p>Top-tier graphic artwork and pixel-perfect digital photo edits tailored to your vision.</p>
-      </div>
-      <div class="glass-card feature-card">
-        <div class="feature-icon"><i class="fa-solid fa-lock"></i></div>
-        <h3>Secure Code</h3>
-        <p>Built following clean coding standards and cybersecurity protection measures.</p>
-      </div>
-      <div class="glass-card feature-card">
-        <div class="feature-icon"><i class="fa-solid fa-headset"></i></div>
-        <h3>24/7 Support</h3>
-        <p>Direct contact and support through WhatsApp and Facebook official channels.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Why Choose Section -->
-  <section id="why">
-    <div class="section-header">
-      <span class="section-subtitle">Excellence & Reliability</span>
-      <h2 class="section-title">Why Choose Phillimon Ekha</h2>
-    </div>
-    <div class="about-grid">
-      <div class="glass-card">
-        <ul style="list-style: none; display: flex; flex-direction: column; gap: 16px;">
-          <li style="display: flex; gap: 14px; align-items: flex-start;">
-            <i class="fa-solid fa-circle-check" style="color: var(--accent-neon); font-size: 1.1rem; margin-top: 3px;"></i>
-            <div>
-              <strong style="display: block; font-size: 1.05rem; margin-bottom: 2px;">Software & App Engineering</strong>
-              <span style="color: var(--text-muted);">Proven skills in building responsive web applications, mobile apps, and smart software logic.</span>
-            </div>
-          </li>
-          <li style="display: flex; gap: 14px; align-items: flex-start;">
-            <i class="fa-solid fa-circle-check" style="color: var(--accent-neon); font-size: 1.1rem; margin-top: 3px;"></i>
-            <div>
-              <strong style="display: block; font-size: 1.05rem; margin-bottom: 2px;">Cybersecurity Focus</strong>
-              <span style="color: var(--text-muted);">In-depth understanding of system protection, secure code practices, and ethical hacking.</span>
-            </div>
-          </li>
-          <li style="display: flex; gap: 14px; align-items: flex-start;">
-            <i class="fa-solid fa-circle-check" style="color: var(--accent-neon); font-size: 1.1rem; margin-top: 3px;"></i>
-            <div>
-              <strong style="display: block; font-size: 1.05rem; margin-bottom: 2px;">Professional Graphic Design</strong>
-              <span style="color: var(--text-muted);">High-quality photo editing, custom poster design, and stunning modern visual graphics.</span>
-            </div>
-          </li>
-        </ul>
-      </div>
-      <div class="glass-card" style="display: flex; justify-content: center; align-items: center; padding: 40px;">
-        <div style="text-align: center;">
-          <h3 style="font-size: 2.8rem; font-weight: 800; color: var(--accent-neon);">100%</h3>
-          <p style="color: var(--text-muted); margin-top: 6px;">Dedicated Tech Excellence & Creative Quality</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Latest Updates Section -->
-  <section id="updates">
-    <div class="section-header">
-      <span class="section-subtitle">Changelog</span>
-      <h2 class="section-title">Latest Updates</h2>
-    </div>
-    <div class="updates-timeline">
-      <div class="glass-card update-item">
-        <span class="update-tag">v2.4.0</span>
-        <div>
-          <h3 style="font-size: 1.05rem; margin-bottom: 4px;">MediaFire Hosting Integration & Performance Optimization</h3>
-          <p style="color: var(--text-muted); font-size: 0.9rem;">Integrated fast external cloud mirror for APK downloads and enhanced core UI animation rendering.</p>
-        </div>
-      </div>
-      <div class="glass-card update-item">
-        <span class="update-tag">v2.1.0</span>
-        <div>
-          <h3 style="font-size: 1.05rem; margin-bottom: 4px;">Security Engine & Visual Suite Upgrade</h3>
-          <p style="color: var(--text-muted); font-size: 0.9rem;">Implemented secure data parsing, graphic design section integration, and client-side optimization.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Download Section -->
-  <section id="download">
-    <div class="glass-card download-box">
-      <span class="section-subtitle">Get Started Today</span>
-      <h2 class="section-title" style="margin-bottom: 14px;">Download Phill AI</h2>
-      <p style="color: var(--text-muted); max-width: 580px; margin: 0 auto 30px;">
-        Download the official Phill AI APK package directly to your Android device via high-speed MediaFire server. Fast installation, clean interface, zero subscription costs.
-      </p>
-      <!-- Direct MediaFire Link -->
-      <a href="https://www.mediafire.com/file/ieo8gduewl3yb1x/Phill-AI.apk/file" target="_blank" rel="noopener" class="btn btn-primary" style="font-size: 1.1rem; padding: 18px 42px;">
-        <i class="fa-solid fa-android" style="font-size: 1.4rem;"></i>
-        Download Phill AI (MediaFire APK)
-      </a>
-      <p style="color: var(--text-muted); font-size: 0.82rem; margin-top: 14px;">
-        Official Release | Checked Safe & Verified | Version 2.4
-      </p>
-    </div>
-  </section>
-
-  <!-- FAQ Section -->
-  <section id="faq">
-    <div class="section-header">
-      <span class="section-subtitle">Got Questions?</span>
-      <h2 class="section-title">Frequently Asked Questions</h2>
-    </div>
-    <div class="faq-container">
-      <div class="glass-card faq-item">
-        <div class="faq-question">
-          <span>What is Phill AI?</span>
-          <i class="fa-solid fa-chevron-down faq-toggle"></i>
-        </div>
-        <div class="faq-answer">
-          Phill AI is a smart virtual assistant application developed by Phillimon Ekha designed to assist users with research, writing, coding, visual tasks, and intelligent automation.
-        </div>
-      </div>
-      <div class="glass-card faq-item">
-        <div class="faq-question">
-          <span>What services does Phillimon Ekha offer?</span>
-          <i class="fa-solid fa-chevron-down faq-toggle"></i>
-        </div>
-        <div class="faq-answer">
-          Phillimon Ekha specializes in web app development, mobile app creation, graphic design, photo editing, cybersecurity vulnerability research, and custom script automation.
-        </div>
-      </div>
-      <div class="glass-card faq-item">
-        <div class="faq-question">
-          <span>How do I install Phill-AI.apk?</span>
-          <i class="fa-solid fa-chevron-down faq-toggle"></i>
-        </div>
-        <div class="faq-answer">
-          Click the download button above to access MediaFire and download `Phill-AI.apk`. Open your downloads folder, tap the file, and grant installation permission if prompted by Android.
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact & Socials Section -->
-  <section id="contact">
-    <div class="section-header">
-      <span class="section-subtitle">Get In Touch</span>
-      <h2 class="section-title">Connect With Phillimon Ekha</h2>
-    </div>
-    <div class="glass-card" style="text-align: center; max-width: 680px; margin: 0 auto;">
-      <h3 style="font-size: 1.4rem; margin-bottom: 10px;">Have a Project, Software, or Graphic Inquiry?</h3>
-      <p style="color: var(--text-muted); margin-bottom: 24px;">
-        Reach out directly to Phillimon Ekha for application development, graphic design, photo editing, cybersecurity consultation, or technical support.
-      </p>
-      <div class="social-links">
-        <a href="https://wa.me/+265986445528" target="_blank" rel="noopener" class="btn btn-whatsapp">
-          <i class="fa-brands fa-whatsapp"></i> WhatsApp Support
-        </a>
-        <a href="https://www.facebook.com/profile.php?id=61592276543985" target="_blank" rel="noopener" class="btn btn-facebook">
-          <i class="fa-brands fa-facebook"></i> Facebook Page
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <div class="footer-content">
-      <a href="#home" class="logo">
+      <article class="card reveal">
         <i class="fa-solid fa-code"></i>
-        <span>Phillimon Ekha</span>
-      </a>
-      <p style="color: var(--text-muted); font-size: 0.88rem;">
-        Phillimon Ekha Official Website
-      </p>
-      <p style="color: var(--text-muted); font-size: 0.82rem;">
-        &copy; 2026 Phillimon Ekha. All Rights Reserved.
-      </p>
+        <h3>Web Development</h3>
+        <p>Modern responsive websites and web applications.</p>
+      </article>
+
+      <article class="card reveal">
+        <i class="fa-solid fa-mobile-screen"></i>
+        <h3>App Development</h3>
+        <p>Mobile and progressive web application projects.</p>
+      </article>
+
+      <article class="card reveal">
+        <i class="fa-solid fa-robot"></i>
+        <h3>Artificial Intelligence</h3>
+        <p>AI tools and AI-powered digital projects.</p>
+      </article>
+
+      <article class="card reveal">
+        <i class="fa-solid fa-shield-halved"></i>
+        <h3>Cybersecurity</h3>
+        <p>Security awareness and defensive education.</p>
+      </article>
+
+      <article class="card reveal">
+        <i class="fa-solid fa-pen-nib"></i>
+        <h3>Graphic Design</h3>
+        <p>Posters, flyers, branding and digital graphics.</p>
+      </article>
+
+      <article class="card reveal">
+        <i class="fa-solid fa-image"></i>
+        <h3>Photo Editing</h3>
+        <p>Creative photo editing and visual enhancement.</p>
+      </article>
+
     </div>
+
+  </section>
+
+
+  <!-- SERVICES -->
+  <section id="services">
+
+    <div class="section-title reveal">
+      <small>SERVICES</small>
+      <h2>What I can create for you.</h2>
+    </div>
+
+    <div class="cards">
+
+      <article class="card reveal">
+        <i class="fa-solid fa-globe"></i>
+        <h3>Website Development</h3>
+        <p>Professional websites for businesses and individuals.</p>
+      </article>
+
+      <article class="card reveal">
+        <i class="fa-solid fa-mobile-screen-button"></i>
+        <h3>App Development</h3>
+        <p>Modern applications and digital tools.</p>
+      </article>
+
+      <article class="card reveal">
+        <i class="fa-solid fa-shield-halved"></i>
+        <h3>Cybersecurity Awareness</h3>
+        <p>Educational content about online safety.</p>
+      </article>
+
+      <article class="card reveal">
+        <i class="fa-solid fa-palette"></i>
+        <h3>Graphic Design</h3>
+        <p>Posters, flyers, branding and social media designs.</p>
+      </article>
+
+      <article class="card reveal">
+        <i class="fa-solid fa-camera"></i>
+        <h3>Photo Editing</h3>
+        <p>Creative and professional photo editing.</p>
+      </article>
+
+      <article class="card reveal">
+        <i class="fa-solid fa-terminal"></i>
+        <h3>Custom Digital Solutions</h3>
+        <p>Technology solutions for different digital projects.</p>
+      </article>
+
+    </div>
+
+  </section>
+
+
+  <!-- PROJECTS -->
+  <section id="projects">
+
+    <div class="section-title reveal">
+      <small>MY WORK</small>
+      <h2>Projects & creative work.</h2>
+    </div>
+
+    <div class="projects">
+
+      <article class="project reveal">
+
+        <img
+          src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=900&q=85">
+
+        <div>
+          <small>SOFTWARE</small>
+          <h3>Web Applications</h3>
+          <p>Modern websites and digital applications.</p>
+        </div>
+
+      </article>
+
+
+      <article class="project reveal">
+
+        <img
+          src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=900&q=85">
+
+        <div>
+          <small>AI</small>
+          <h3>Phill AI</h3>
+          <p>AI project created under the Phillimon Ekha brand.</p>
+        </div>
+
+      </article>
+
+
+      <article class="project reveal">
+
+        <img
+          src="https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=900&q=85">
+
+        <div>
+          <small>DESIGN</small>
+          <h3>Graphic Design</h3>
+          <p>Posters, artwork and branding projects.</p>
+        </div>
+
+      </article>
+
+
+      <article class="project reveal">
+
+        <img
+          src="https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&w=900&q=85">
+
+        <div>
+          <small>PHOTO EDITING</small>
+          <h3>Creative Editing</h3>
+          <p>Creative photo editing and visual work.</p>
+        </div>
+
+      </article>
+
+
+      <article class="project reveal">
+
+        <img
+          src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=900&q=85">
+
+        <div>
+          <small>SECURITY</small>
+          <h3>Cybersecurity Awareness</h3>
+          <p>Educational security and privacy content.</p>
+        </div>
+
+      </article>
+
+
+      <article class="project reveal">
+
+        <img
+          src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=900&q=85">
+
+        <div>
+          <small>CREATIVE</small>
+          <h3>Digital Creator Projects</h3>
+          <p>Technology and creative digital projects.</p>
+        </div>
+
+      </article>
+
+    </div>
+
+  </section>
+
+
+  <!-- PHILL AI -->
+  <section id="ai">
+
+    <div class="feature-box reveal">
+
+      <small>AI PROJECT</small>
+
+      <h2>
+        Meet <span>Phill AI.</span>
+      </h2>
+
+      <p>
+        An AI project created under the Phillimon Ekha
+        digital ecosystem.
+      </p>
+
+      <!-- SAME MEDIAFIRE LINK -->
+      <a
+        href="https://www.mediafire.com/file/ieo8gduewl3yb1x/Phill-AI.apk/file"
+        target="_blank"
+        class="btn primary">
+
+        <i class="fa-solid fa-download"></i>
+        Download Phill AI
+
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <!-- CYBERSECURITY -->
+  <section id="security">
+
+    <div class="security-box reveal">
+
+      <small>CYBERSECURITY</small>
+
+      <h2>Cyber security is everyone's responsibility.</h2>
+
+      <p>
+        I focus on cybersecurity awareness and educational
+        content that helps people understand online risks,
+        privacy and safer digital practices.
+      </p>
+
+      <div class="security-grid">
+
+        <div>
+          <i class="fa-solid fa-lock"></i>
+          <h3>Account Security</h3>
+          <p>Learn safer ways to protect online accounts.</p>
+        </div>
+
+        <div>
+          <i class="fa-solid fa-user-shield"></i>
+          <h3>Privacy</h3>
+          <p>Understand how to protect personal information.</p>
+        </div>
+
+        <div>
+          <i class="fa-solid fa-triangle-exclamation"></i>
+          <h3>Threat Awareness</h3>
+          <p>Recognise suspicious links, scams and threats.</p>
+        </div>
+
+      </div>
+
+      <strong class="warning">
+        This is for educational purposes only.
+      </strong>
+
+    </div>
+
+  </section>
+
+
+  <!-- CONTACT -->
+  <section id="contact">
+
+    <div class="contact-box reveal">
+
+      <small>GET IN TOUCH</small>
+
+      <h2>Let's create something.</h2>
+
+      <p>
+        Have a website, application, design or digital
+        project? Contact me and let's talk.
+      </p>
+
+      <div class="buttons">
+
+        <!-- SAME WHATSAPP -->
+        <a
+          href="https://wa.me/+265986445528"
+          target="_blank"
+          class="btn primary">
+
+          <i class="fa-brands fa-whatsapp"></i>
+          Call or WhatsApp
+
+        </a>
+
+
+        <!-- SAME FACEBOOK -->
+        <a
+          href="https://www.facebook.com/profile.php?id=61592276543985"
+          target="_blank"
+          class="btn">
+
+          <i class="fa-brands fa-facebook"></i>
+          Facebook
+
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer>
+
+    <strong>© 2026 Phillimon Ekha</strong>
+
+    <span>
+      Software • AI • Security • Design
+    </span>
+
   </footer>
 
-  <!-- Back To Top Button -->
-  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+
+  <button id="topBtn">
     <i class="fa-solid fa-arrow-up"></i>
   </button>
 
-  <!-- Fast JavaScript Logic -->
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
 
-      // Remove Loader Fast
-      const loader = document.getElementById('loader');
-      setTimeout(() => {
-        loader.style.opacity = '0';
-        loader.style.visibility = 'hidden';
-      }, 300);
+  <script src="script.js"></script>
 
-      // Typing Effect (Includes Graphic Design & Editing)
-      const typingElement = document.getElementById('typing');
-      const phrases = [
-        'Phill AI Creator',
-        'Software Developer',
-        'Ethical Hacker',
-        'Graphic Designer',
-        'Photo Editor',
-        'Digital Creator'
-      ];
-      let phraseIdx = 0;
-      let charIdx = 0;
-      let isDeleting = false;
-
-      function type() {
-        const currentPhrase = phrases[phraseIdx];
-        if (isDeleting) {
-          typingElement.textContent = currentPhrase.substring(0, charIdx - 1);
-          charIdx--;
-        } else {
-          typingElement.textContent = currentPhrase.substring(0, charIdx + 1);
-          charIdx++;
-        }
-
-        let speed = isDeleting ? 40 : 80;
-
-        if (!isDeleting && charIdx === currentPhrase.length) {
-          speed = 1800;
-          isDeleting = true;
-        } else if (isDeleting && charIdx === 0) {
-          isDeleting = false;
-          phraseIdx = (phraseIdx + 1) % phrases.length;
-          speed = 400;
-        }
-
-        setTimeout(type, speed);
-      }
-      type();
-
-      // Mobile Menu Toggle
-      const mobileToggle = document.getElementById('mobileToggle');
-      const navLinks = document.getElementById('navLinks');
-
-      mobileToggle.addEventListener('click', () => {
-        navLinks.classList.toggle('active');
-        const icon = mobileToggle.querySelector('i');
-        if (navLinks.classList.contains('active')) {
-          icon.classList.remove('fa-bars');
-          icon.classList.add('fa-xmark');
-        } else {
-          icon.classList.remove('fa-xmark');
-          icon.classList.add('fa-bars');
-        }
-      });
-
-      // Close mobile menu on link click
-      document.querySelectorAll('.nav-links a').forEach(link => {
-        link.addEventListener('click', () => {
-          navLinks.classList.remove('active');
-          const icon = mobileToggle.querySelector('i');
-          if (icon) {
-            icon.classList.remove('fa-xmark');
-            icon.classList.add('fa-bars');
-          }
-        });
-      });
-
-      // Dark / Light Theme Toggle
-      const themeToggle = document.getElementById('themeToggle');
-      const themeIcon = themeToggle.querySelector('i');
-
-      themeToggle.addEventListener('click', () => {
-        const currentTheme = document.body.getAttribute('data-theme');
-        if (currentTheme === 'light') {
-          document.body.removeAttribute('data-theme');
-          themeIcon.classList.remove('fa-sun');
-          themeIcon.classList.add('fa-moon');
-        } else {
-          document.body.setAttribute('data-theme', 'light');
-          themeIcon.classList.remove('fa-moon');
-          themeIcon.classList.add('fa-sun');
-        }
-      });
-
-      // Passive Scroll Handling for Navigation and Back To Top
-      window.addEventListener('scroll', () => {
-        const sections = document.querySelectorAll('section');
-        let current = '';
-        const scrollPos = window.pageYOffset;
-
-        sections.forEach(section => {
-          if (scrollPos >= section.offsetTop - 140) {
-            current = section.getAttribute('id');
-          }
-        });
-
-        document.querySelectorAll('.nav-links a').forEach(a => {
-          a.classList.remove('active');
-          if (a.getAttribute('href') === `#${current}`) {
-            a.classList.add('active');
-          }
-        });
-
-        const backToTop = document.getElementById('backToTop');
-        if (scrollPos > 300) {
-          backToTop.classList.add('show');
-        } else {
-          backToTop.classList.remove('show');
-        }
-      }, { passive: true });
-
-      // Back to top click
-      document.getElementById('backToTop').addEventListener('click', () => {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-      });
-
-      // FAQ Accordion
-      const faqItems = document.querySelectorAll('.faq-item');
-      faqItems.forEach(item => {
-        item.addEventListener('click', () => {
-          const isActive = item.classList.contains('active');
-          faqItems.forEach(i => i.classList.remove('active'));
-          if (!isActive) {
-            item.classList.add('active');
-          }
-        });
-      });
-
-    });
-  </script>
 </body>
-</html>
+</html> 
